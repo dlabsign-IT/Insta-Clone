@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Nexa-Bold';
+    src: url(/Font/Nexa\ Bold.otf);
+}
+@font-face {
+    font-family: 'Nexa-Medium';
+    src: url(Font/NexaMedium.otf);
+}
+@font-face {
+    font-family: 'Nexa-Reguler';
+    src: url(Font/NexaBook.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+.mainpage {
+    height: 100%;
+    display: flex;
+    border: 1px solid #000;
+    justify-content: space-between;
+}
+
+.right-page {
+    width: 450px;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.right-page img{
+    height: 100%;
+    width: 100%;
+}
+
+.left-page {
+    width: 50%;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.form-section {
+    margin: auto;
+}
