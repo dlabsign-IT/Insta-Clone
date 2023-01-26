@@ -1,256 +1,422 @@
 @font-face {
-    font-family: 'Nexa-Bold';
-    src: url(/Font/Nexa\ Bold.otf);
+  font-family: "Nexa-Bold";
+  src: url(/Font/Nexa\ Bold.otf);
 }
 @font-face {
-    font-family: 'Nexa-Medium';
-    src: url(Font/NexaMedium.otf);
+  font-family: "Nexa-Medium";
+  src: url(Font/NexaMedium.otf);
 }
 @font-face {
-    font-family: 'Nexa-Reguler';
-    src: url(Font/NexaBook.otf);
+  font-family: "Nexa-Reguler";
+  src: url(Font/NexaBook.otf);
 }
 
 :root {
-    --main-color: #fafafa;
-    --black-color: rgb(12, 12, 12);
+  --main-color: #fafafa;
+  --black-color: rgb(12, 12, 12);
 }
 
 body {
-    padding:0;
-    margin: 0;
-    background-color: #f1f1f1;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(236, 236, 236);
 }
 
 .header {
-    background-color: #fafafa;
-    border-bottom: 1px solid #bbbbbb;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 18.7%;
+  background-color: #fafafa;
+  border-bottom: 1px solid #bbbbbb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18.7%;
 }
 
 /* Nav Menu */
 .logo img {
-    width: 130px;
-    opacity: 1;
-    transition: .800ms;
+  width: 130px;
+  opacity: 1;
+  transition: 0.8ms;
 }
 
 .logo img:hover {
-    opacity: .5;
+  opacity: 0.5;
 }
 
-
 .warp-1 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .warp-1 li {
-    list-style-type: none;
-    padding: 0px 12px;
-    align-items: center;
+  list-style-type: none;
+  padding: 0px 12px;
+  align-items: center;
 }
 
 .warp-1 img {
-    width: 23px;
-    display: flex;
-    flex-direction: row;
+  width: 23px;
+  display: flex;
+  flex-direction: row;
 }
 .warp-2 {
-    margin-top: -43px;
-    display: flex;
-    align-items: center;
+  margin-top: -43px;
+  display: flex;
+  align-items: center;
 }
 
 .warp-2 li {
-    list-style-type: none;
-    padding: 0px 12px;
-    align-items: center;
+  list-style-type: none;
+  padding: 0px 12px;
+  align-items: center;
 }
 
 .warp-2 img {
-    width: 23px;
-    display: flex;
-    flex-direction: row;
-    transition: 0.3s;
-    opacity: 0;
+  width: 23px;
+  display: flex;
+  flex-direction: row;
+  transition: 0.3s;
+  opacity: 0;
 }
 
-
 .warp-2 img:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .profile {
-    border: solid 2px #b4b4b4;
-    width: 28px;
-    height: 28px;
-    border-radius: 20px;
+  border: solid 2px #b4b4b4;
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
 }
 
 .profile img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 200px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 200px;
 }
 
 .profile:hover {
-    border: solid 2px #1d1d1d;
+  border: solid 2px #1d1d1d;
 }
-
 
 /* Search */
 div .search-container {
-    margin-left: 22px;
-    width: 230px;
-    align-items: center;
+  margin-left: 22px;
+  width: 230px;
+  align-items: center;
 }
 
 input {
-    width: auto;
-    border-radius: 0px 7px 7px 0px;
-    border: none;
-    background-color: rgb(236, 236, 236);
-    padding: 10px 12px;
-    
+  width: auto;
+  border-radius: 0px 7px 7px 0px;
+  border: none;
+  background-color: rgb(236, 236, 236);
+  padding: 10px 12px;
 }
 
 button {
-    border-radius: 7px 0px 0px 7px;
-    background-color: rgb(236, 236, 236);
-    border: none;
-    padding: 10px;
-    margin-right: -4px;
+  border-radius: 7px 0px 0px 7px;
+  background-color: rgb(236, 236, 236);
+  border: none;
+  padding: 10px;
+  margin-right: -4px;
 }
 
 button a {
-    color: #aaaaaa;
+  color: #aaaaaa;
 }
 
 button a:hover {
-    color: #292929;
-    font-weight: 700;
+  color: #292929;
+  font-weight: 700;
 }
 
+/* ============================= PROFILE PAGE ============================= */
 
-
+.profile-main {
+  width: 800px;
+  margin: auto;
+  height: 3000px;
+  display: flex;
+  flex-direction: column;
+}
 
 .profile-header {
-    margin: auto 20%;
-    align-items: center;
-    border: 1px solid #000;
+  margin-top: 8px;
 }
+
+/* ============================= PROFILE PAGE ============================= */
 
 .profile-page {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #000;
-    align-items: center;
-    padding: 0px 105px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 25px;
+  padding: 10px 0px 35px;
 }
 
-
-.usermain {
-    width: 400px;
-}
+/* ======= INFO PROFILE ======= */
 
 .user-profile-img {
-    margin: 0px 66px 0px 0px;
-    border: 1px solid #000;
-    width: 169px;
-    height: 169px;
+  margin: 0px 20px 0px 0px;
+  width: 169px;
+  height: 169px;
 }
 
 .user-profile-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 200px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 200px;
+}
+
+/* ======= USERMAIN ======= */
+.usermain {
+  width: 400px;
 }
 
 .user-grup-btn {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border: 1px solid #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+
+.user-grup-btn a {
+  text-decoration: none;
+}
+
+.user-grup-btn h3 {
+  font-size: 20px;
+  font-family: "Nexa-Bold";
+  color: #222;
+}
+
+.user-grup-btn button {
+  color: white;
+  margin-left: 20px;
 }
 
 .user-follow-btn {
-    margin: 0px 20px;
+  font-size: 14px;
+  padding: 7.5px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0095f6;
+  border-radius: 4px;
 }
 
+.user-sendmsg-btn {
+  font-size: 14px;
+  padding: 7.5px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0095f6;
+  border-radius: 4px;
+}
+
+.user-grup-btn button:hover {
+  background-color: #087ac5;
+}
+
+/* ======= PENGIKUT ======= */
 
 .user-foll-info {
-    display: flex;
-    justify-content: flex-start;
-    border: 1px solid #000;
-    height: 35px;
-    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  height: 35px;
+  align-items: center;
+}
+
+.user-foll-info a {
+  width: auto;
+  color: #1d1d1d;
+  text-decoration: none;
 }
 
 .user-foll-info h4 {
-    margin: 0px 27px 0px 0px;
+  font-family: "Nexa-Bold";
+  font-size: 14.6px;
+  margin: 0px 27px 0px 0px;
 }
 
-.bio {
-    border: 1px solid #000;
-    margin: 0;
+.user-foll-info span {
+  font-family: sans-serif;
+}
+
+/* ======= BIO ======= */
+
+.bio h4 {
+  font-family: "Nexa-Bold";
+  margin-top: 10px;
+  margin-bottom: -10px;
+  height: 20px;
+  font-size: 18px;
+  color: #1d1d1d;
 }
 
 .bio p {
-    margin-top:12px;
+  font-size: 13.6px;
+  margin-top: 12px;
+  font-family: sans-serif;
+  margin-bottom: -4px;
 }
 
-
-.bio h4 {
-    margin-top: 10px;
-    margin-bottom: -10px;
-    height: 20px;
-    border: 1px solid #000;
+.follby {
+  font-size: 12px;
+  font-family: "Nexa-Reguler";
 }
+
+/* ============================= HIGHLIGHT ============================= */
 
 .profile-highlight {
-    margin-top: 13px;
-    width: 100%;
-    border: 1px solid #000;
-    display: flex;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fafafa;
+  margin-top: 13px;
+  padding: 17px 12px;
+  border-radius: 20px;
 }
-
-
-
-.profile-highlight-border {
-    width: 78px;
-    height: 78px;
-    border-radius: 200px;
-    border: 1px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.new-highlight {
-    width: 78px;
-    margin-right: 20px;
-}
-
-.new-highlight h4
 
 .highlight {
-    width: 78px;
-    text-align: center;
+  margin: 0px 12px;
+  text-align: center;
 }
 
-.highlight h4 {
-    margin-top: 10px;
+.profile-highlight-border {
+  width: 78px;
+  height: 78px;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.text-highlight h4 {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-family:sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ======= HIGLIGHT NEW ======= */
+
+.profile-highlight-new {
+  width: 78px;
+  height: 78px;
+  border-radius: 200px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-highlight-new img {
+  width: 28px;
+  height: 28px;
+  opacity: 0.3;
+}
+
+/* ======= HIGLIGHT IMG ======= */
 
 .profile-highlight-img {
-    width: 75px;
-    height: 75px;
-    border-radius: 200px;
-    border: 1px solid #000;
+  width: 70px;
+  height: 70px;
+  border-radius: 200px;
+  border: 1px solid #000;
+}
+
+.profile-highlight-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 200px;
+}
+
+/* ============================= CONTENT ============================= */
+
+.profile-content {
+  margin-top: 20px;
+  width: 799px;
+  height: auto;
+  border: 1px solid #000;
+}
+
+/* ======= SLIDE CONTENT ======= */
+
+.slide-content {
+  width: auto;
+  height: 50px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-content-fill {
+  margin: 0px 20px;
+}
+
+.slide-content-fill img {
+  margin-right: 5px;
+}
+
+/* ======= SLIDE FILL CONTENT ======= */
+
+.slide-content-fill h4 {
+  font-size: 13px;
+}
+
+.postingan {
+  width: 110px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px #1d1d1d solid;
+}
+
+.save {
+  width: 110px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px #1d1d1d solid;
+}
+
+.ditandai {
+  width: 110px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px #1d1d1d solid;
+}
+
+/* ============================= FILL CONTENT ============================= */
+
+.profile-post {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content {
+  width: 256px;
+  height: 256px;
+  margin-bottom: 9px;
+  margin-top: 9px;
+}
+
+.content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

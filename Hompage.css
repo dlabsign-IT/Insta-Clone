@@ -414,7 +414,7 @@ p {
     border-radius: 200px;
     display: flex;
     justify-content: center;
-    transition: .6s ease-in-out;
+    transition: .6s;
     align-items: center;
 
 }
@@ -424,7 +424,7 @@ p {
 }
 
 .sts-circle-new:hover {
-    transform: rotate(145deg);
+    transform: rotate(45deg);
 }
 
 .sts-newsection p {
